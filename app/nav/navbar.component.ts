@@ -5,9 +5,9 @@ import { Component } from '@angular/core'
     templateUrl: 'app/nav/navbar.component.html',
     styles: [
         `
-            .navbar.navbar-nav { font-size: 15px }
+            .nav.navbar-nav { font-size: 15px }
             #searchform { margin-right: 100px}
-            @media (max-width: 1200px) { #searchForm {display:none}}
+            @media (max-width: 1200px) { #searchForm {display:none} }
         `
     ]
 

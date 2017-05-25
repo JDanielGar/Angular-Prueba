@@ -10,9 +10,9 @@ import { Component } from '@angular/core'
         <h1>Angular</h1>
         <hr/>
         <div class="well">
-            <h2> Hello Fucking World </h2>
+            <h2> Hello World</h2>
+            <event-thumbnail [event]="event1"></event-thumbnail>
         </div>
-        <event-thumbnail [event]="event1"></event-thumbnail>
     </div>`
 
 })
