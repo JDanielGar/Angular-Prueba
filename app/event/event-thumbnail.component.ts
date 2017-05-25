@@ -16,11 +16,10 @@ import { Component, Input, Output, EventEmitter } from '@angular/core'
     `,
     styles: [`
     .pad-left { margin-left : 10px; }
-    .well div { color: red }
     `
     ]
 })
 
 export class EventThumbnailComponent{
-    @Input() event|
+    @Input() event
 }

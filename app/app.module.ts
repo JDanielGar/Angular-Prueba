@@ -4,12 +4,14 @@ import { BrowserModule} from '@angular/platform-browser'
 import { EventsAppComponent } from './events-app.component'
 import { EventListComponent } from './event/event-list.component'
 import { EventThumbnailComponent } from './event/event-thumbnail.component'
+import { NavBarComponent } from './nav/navbar.component'
 
 @NgModule({
     imports: [BrowserModule],
     declarations: [EventsAppComponent,
     EventListComponent, 
-    EventThumbnailComponent],
+    EventThumbnailComponent,
+    NavBarComponent],
     bootstrap: [EventsAppComponent]
 })
 
