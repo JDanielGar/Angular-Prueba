@@ -6,10 +6,14 @@ import { Component } from '@angular/core'
 @Component({
     selector: 'event-list',
     template: `
-    <div *ngFor="let event of events">
-        <h1>Angular</h1>
-        <hr/>
-        <event-thumbnail [event]="event"></event-thumbnail>
+    <h1>Angular</h1>
+    <div>
+        <div class="row"> 
+          <hr/>
+          <div *ngFor="let event of events" class="col-md-5">   
+            <event-thumbnail [event]="event"></event-thumbnail>
+          </div>
+        </div>
     </div>
     `
 })
