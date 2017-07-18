@@ -23,12 +23,14 @@ import { appRoutes } from './routes'
     EventDetailsComponent,
     CreateEventComponent,
     Error404Component],
-    providers: [EventService, ToastrService, EventRouterActivator,
-    { 
-        provide: 'canDeactivateCreateEvent', 
-        useValue: checkDirtyState
-    }
-        ],
+    providers: [
+        EventService, 
+        ToastrService, 
+        EventRouterActivator,
+        { 
+            provide: 'canDeactivateCreateEvent', 
+            useValue: checkDirtyState
+        }],
     bootstrap: [EventsAppComponent]
 })
 
@@ -36,7 +38,7 @@ export class AppModule {}
 
 function checkDirtyState(component:CreateEventComponent){
     if(component.isDirty){
-        return window.confirm('No has salvado, salva huevón.')
+        return window.confirm('¿Seguro que deseas salir de la pantalla?.')
     }
     return true
 }
