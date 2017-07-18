@@ -22,11 +22,13 @@ import { appRoutes } from './routes'
     NavBarComponent,
     EventDetailsComponent,
     CreateEventComponent,
-    Error404Component],
+    Error404Component,
+    ],
     providers: [
         EventService, 
         ToastrService, 
         EventRouterActivator,
+        
         { 
             provide: 'canDeactivateCreateEvent', 
             useValue: checkDirtyState
